@@ -6,6 +6,7 @@ class Question(models.Model):
     
     def __str__(self):
         return self.pub_date
+    #
 
 class Choice(models.Model):
     question= models.ForeignKey(Question,on_delete=models.CASCADE)
